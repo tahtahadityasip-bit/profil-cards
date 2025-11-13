@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Pegawai Tubel - Profile Cards</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--primary:#0b63d6;--muted:#64748b;--border:#e9eef6}
+*{box-sizing:border-box}
+body{font-family:Inter, Roboto, Arial, sans-serif;background:var(--bg);margin:0;padding:20px}
+.header{max-width:1200px;margin:0 auto 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px}
+h1{font-size:20px;color:#072a6f;margin:0}
+.summary{font-size:13px;color:var(--muted)}
+.container{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;max-width:1300px;margin:0 auto;padding:6px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(19,24,44,0.06);border:1px solid var(--border);min-height:140px;display:flex;flex-direction:column;justify-content:space-between}
+.card h3{margin:0 0 8px 0;color:#0b3d91;font-size:16px}
+.card p{margin:4px 0;color:#334155;font-size:14px;line-height:1.4}
+.meta{font-size:12px;color:var(--muted);margin-top:8px}
+.btn{display:inline-block;margin-top:10px;padding:8px 12px;background:var(--primary);color:#fff;text-decoration:none;border-radius:8px;font-weight:600}
+@media(max-width:420px){body{padding:12px}.card{padding:12px}.card h3{font-size:15px}.card p{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>Data Pegawai Tugas Belajar (Tubel)</h1>
+    <div class="summary" id="summary">Memuat...</div>
+  </div>
+  <div>
+    <input id="search" type="search" placeholder="Cari nama / unit kerja" style="padding:8px 10px;border-radius:8px;border:1px solid #d1d5db;font-size:14px">
+  </div>
+</div>
+<div class="container" id="cards">
+
+  <div class="card" data-name="susilowati,st" data-unit="bdi yogyakarta">
+    <div>
+      <h3>👤 SUSILOWATI,ST</h3>
+      <p><strong>Program Studi:</strong> S2 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> BDI YOGYAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Feb 2024 — 31 Jan 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1R-5If2fKskLYuR5lEt0XuPL5N8wlSWe7/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="bilal ahmadi, st, mt" data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 BILAL AHMADI, ST, MT</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT TEKNOLOGI SEPULUH NOPEMBER</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 6 Feb 2023 — 5 Feb 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1sKmWfELNkszQoL6EIVHehSrjNl4BYvEC/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="fajar pitarsi dharma, s.st., m.t" data-unit="akom surakarta">
+    <div>
+      <h3>👤 FAJAR PITARSI DHARMA, S.ST., M.T</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT TEKNOLOGI SEPULUH NOPEMBER</p>
+      <p><strong>Unit Kerja:</strong> AKOM SURAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 6 Feb 2023 — 5 Feb 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1YIgMwXuRX8OgU5O3bb7-Y8KE7UgoWHkS/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="yanuar wangga raharja, sh" data-unit="politeknik industri logam morowali">
+    <div>
+      <h3>👤 YANUAR WANGGA RAHARJA, SH</h3>
+      <p><strong>Program Studi:</strong> S2 ILMU HUKUM</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SEBELAS MARET</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI LOGAM MOROWALI</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 8 Feb 2024 — 7 Feb 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1GmMUYNKnzYDnubdXuYD_v0YbpM7lQD2C/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="laily nurfiana, s.tr.bns" data-unit="akom surakarta">
+    <div>
+      <h3>👤 LAILY NURFIANA, S.Tr.Bns</h3>
+      <p><strong>Program Studi:</strong> S2 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> AKOM SURAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Feb 2024 — 11 Feb 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/16Pkq_GTqpmQurl8DMUMw4SUYUAgZSgxp/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="safril, m.t.," data-unit="politeknik stmi jakarta">
+    <div>
+      <h3>👤 SAFRIL, M.T.,</h3>
+      <p><strong>Program Studi:</strong> S3 Ph.D OF ADVANCED FLUIDS</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITI MALAYSIA PAHANG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STMI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 28 Feb 2022 — 27 Feb 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1AXeAOmIsxtAlSFKcFypW-kUjW4YaILhp/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="maria kristiani, st.," data-unit="smti bandar lampung">
+    <div>
+      <h3>👤 MARIA KRISTIANI, ST.,</h3>
+      <p><strong>Program Studi:</strong> S2 TEKNIK KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> SMTI BANDAR LAMPUNG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Aug 2024 — 31 Jul 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1gGwYupF_S3OIiyGCacjOpeVu4pD4ekyy/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="christina gracef hutauruk, s.h.," data-unit="bdi medan">
+    <div>
+      <h3>👤 CHRISTINA GRACEF HUTAURUK, S.H.,</h3>
+      <p><strong>Program Studi:</strong> S2 ILMU HUKUM</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SUMATERA UTARA</p>
+      <p><strong>Unit Kerja:</strong> BDI MEDAN</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 19 Aug 2024 — 18 Aug 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1lhohnAnaUMRH40YNJy3vrZ_ODJ9yEnEq/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="mega kumala ratna, s.st" data-unit="akom surakarta">
+    <div>
+      <h3>👤 MEGA KUMALA RATNA, S.ST</h3>
+      <p><strong>Program Studi:</strong> S2 MANAJEMEN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SEBELAS MARET</p>
+      <p><strong>Unit Kerja:</strong> AKOM SURAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 26 Aug 2024 — 25 Aug 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1Gy7AG624stkdbG3mqG14hgtRsR9M29Uf/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="moh mustakim fauzan, s.pd.," data-unit="politeknik industri furnitur dan pengolahan kayu kendal">
+    <div>
+      <h3>👤 MOH MUSTAKIM FAUZAN, S.Pd.,</h3>
+      <p><strong>Program Studi:</strong> S2 ILMU HUKUM</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS NEGERI SEMARANG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI FURNITUR DAN PENGOLAHAN KAYU KENDAL</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 26 Aug 2024 — 25 Aug 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1Y_1L22N7ItZRu-1MsaHo_84_RKp1RB2B/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="bayu giri prakosa, se., m.si.," data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 BAYU GIRI PRAKOSA, SE., M.Si.,</h3>
+      <p><strong>Program Studi:</strong> S3 MANAJEMEN BISNIS DAN TEKNOLOGI</p>
+      <p><strong>Perguruan Tinggi:</strong> KOREA ADVANCED INSTITUTE OF SCIENCE AND TECHNOLOGY</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 29 Aug 2022 — 29 Aug 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1_4DMWEQ51kqMBMI1ScCSG67uqYxcQ83u/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="syaiful ahsan, s.t., m.t.," data-unit="politeknik stmi jakarta">
+    <div>
+      <h3>👤 SYAIFUL AHSAN, S.T., M.T.,</h3>
+      <p><strong>Program Studi:</strong> S3 GRADUATE SCHOOL OF SCIENCE AND ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITY OF GRONINGEN, BELANDA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STMI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Sep 2022 — 31 Aug 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1ES4iWrqytk9uialXyn7Ce3SId8qd0wws/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="heri firmansah lumban toruan, st" data-unit="smti pontianak">
+    <div>
+      <h3>👤 HERI FIRMANSAH LUMBAN TORUAN, ST</h3>
+      <p><strong>Program Studi:</strong> S2 TEKNIK MESIN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SUMATERA UTARA</p>
+      <p><strong>Unit Kerja:</strong> SMTI PONTIANAK</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 2 Sep 2024 — 1 Sep 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1VQI6hx5omvpuRlP-tlRQn2NFsfHosVLp/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="muhammad nur alam tejo, s.fil" data-unit="pusbindiklat, bpsdmi">
+    <div>
+      <h3>👤 MUHAMMAD NUR ALAM TEJO, S.Fil</h3>
+      <p><strong>Program Studi:</strong> S2 MANAJEMEN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS INDONESIA</p>
+      <p><strong>Unit Kerja:</strong> PUSBINDIKLAT, BPSDMI</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 3 Feb 2025 — 1 Sep 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1v94VuYcJ9MEE6zt2bLtCgo025dlgne6F/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="anastasia puji renaningtyas, st" data-unit="pusbindiklat, bpsdmi">
+    <div>
+      <h3>👤 ANASTASIA PUJI RENANINGTYAS, ST</h3>
+      <p><strong>Program Studi:</strong> S2 MANAJEMEN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS MERCUBUANA</p>
+      <p><strong>Unit Kerja:</strong> PUSBINDIKLAT, BPSDMI</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 9 Sep 2024 — 8 Sep 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1oAQ2lLX23R4ljy6IsS6VuK8x002yuKTh/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="liana dwi fitrianti, s.tr.bns" data-unit="politeknik sttt bandung">
+    <div>
+      <h3>👤 LIANA DWI FITRIANTI, S.Tr.Bns</h3>
+      <p><strong>Program Studi:</strong> S2 TERAPAN REKAYASA TEKSTIL DAN APPAREL</p>
+      <p><strong>Perguruan Tinggi:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 9 Sep 2024 — 8 Sep 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1cH04mOr13RloDplQmCbPLUUf7WCgUCxE/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="siska astari dewi, s.st.," data-unit="politeknik sttt bandung">
+    <div>
+      <h3>👤 SISKA ASTARI DEWI, S.ST.,</h3>
+      <p><strong>Program Studi:</strong> S2 TERAPAN REKAYASA TEKSTIL DAN APPAREL</p>
+      <p><strong>Perguruan Tinggi:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 9 Sep 2024 — 8 Sep 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1cCvp5GpTvUpt9KEPBaqcky2T1twnK2E7/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="fachrur razy rahman, mt" data-unit="politeknik industri logam morowali">
+    <div>
+      <h3>👤 FACHRUR RAZY RAHMAN, MT</h3>
+      <p><strong>Program Studi:</strong> S3 THE DIVISION OF SYSTEM ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> MIE UNIVERSITY , JEPANG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI LOGAM MOROWALI</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Oct 2023 — 30 Sep 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1aSiOyBUs_FeEkRsWQ-ecD0wxMlGOPUXD/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="ahmad anggriyanto asrizal, st" data-unit="smk-smti makassar">
+    <div>
+      <h3>👤 AHMAD ANGGRIYANTO ASRIZAL, ST</h3>
+      <p><strong>Program Studi:</strong> S2 CHEMICAL ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> HIROSHIMA UNIVERSITY</p>
+      <p><strong>Unit Kerja:</strong> SMK-SMTI MAKASSAR</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 3 Oct 2024 — 2 Oct 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/16x5vYoiRdJIXIrV6JSf1F26soYDZoiWW/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="siti nurkomariyah, sst, mm" data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 SITI NURKOMARIYAH, SST, MM</h3>
+      <p><strong>Program Studi:</strong> S3 MANAJEMEN DAN BISNIS</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT PERTANIAN BOGOR</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Nov 2022 — 31 Oct 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1s3O4P18x_Kujf0ncprqkSH29uMP3iHvQ/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="devy puspitasari, s.st" data-unit="bdi jakarta">
+    <div>
+      <h3>👤 DEVY PUSPITASARI, S.ST</h3>
+      <p><strong>Program Studi:</strong> S2 POLICY COMPETENCY BASED ON ICT CONVERGENCE</p>
+      <p><strong>Perguruan Tinggi:</strong> HANDONG GLOBAL UNIVERSITY</p>
+      <p><strong>Unit Kerja:</strong> BDI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 11 Aug 2025 — 31 Dec 2026</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1uusoPcZewUtVW7njflUj1Mu9CqvuSqcz/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="maya komalasari, s.sit, m.t.," data-unit="politeknik sttt bandung">
+    <div>
+      <h3>👤 MAYA KOMALASARI, S.SiT, M.T.,</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU DAN TEKNIK MATERIAL</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT TEKNOLOGI BANDUNG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 18 Jan 2024 — 17 Jan 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1khEQu00zJyYDjwEpkzrJ6OkU4-2Oel7x/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="vallen laurinda defrina widyawan, s.ap." data-unit="akom surakarta">
+    <div>
+      <h3>👤 VALLEN LAURINDA DEFRINA WIDYAWAN, S.AP.</h3>
+      <p><strong>Program Studi:</strong> S2 MANAJEMEN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SEBELAS MARET</p>
+      <p><strong>Unit Kerja:</strong> AKOM SURAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 17 Feb 2025 — 20 Jan 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/140IVbsnCJIHuHMFKVUWMr_HaLTRSWXhe/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="ibnu hajar al asqolani, s.i.p," data-unit="politeknik industri logam morowali">
+    <div>
+      <h3>👤 IBNU HAJAR AL ASQOLANI, S.I.P,</h3>
+      <p><strong>Program Studi:</strong> S2 ILMU KOMUNIKASI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI LOGAM MOROWALI</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 10 Feb 2025 — 31 Jan 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1Czv0fWhRdxjiwlFUUdHrvuLI3cOjSJlg/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="achmad fatahillah, s.pd" data-unit="smk-smti pontianak">
+    <div>
+      <h3>👤 ACHMAD FATAHILLAH, S.Pd</h3>
+      <p><strong>Program Studi:</strong> S2 MANAJEMEN TEKNOLOGI</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT TEKNOLOGI SEPULUH NOPEMBER</p>
+      <p><strong>Unit Kerja:</strong> SMK-SMTI PONTIANAK</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 24 Feb 2025 — 23 Feb 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1FUiBEYaGg3gdlxQrBD_TaaCdXhiuvEeK/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="laksmi ambarwati, m.t." data-unit="politeknik stmi jakarta">
+    <div>
+      <h3>👤 LAKSMI AMBARWATI, M.T.</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS INDONESIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STMI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Aug 2023 — 30 Jun 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/17qovFof6AiN_41sukoKTvAltjhMgAvoR/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="muchammad akbar, a.md." data-unit="smak makassar">
+    <div>
+      <h3>👤 MUCHAMMAD AKBAR, A.Md.</h3>
+      <p><strong>Program Studi:</strong> S1 TEKNOLOGI PANGAN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS TERBUKA</p>
+      <p><strong>Unit Kerja:</strong> SMAK MAKASSAR</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 1 Jul 2025 — 30 Jun 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1h_x-CTWgcZf3PCZ8ZZsBx_23_rsakodQ/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="wahyu ratnaningsih" data-unit="politeknik atk yogyakarta">
+    <div>
+      <h3>👤 WAHYU RATNANINGSIH</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU LINGKUNGAN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATK YOGYAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Aug 2024 — 31 Jul 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/17daJUR16CVoFHGanrGatFuf276b-mS_o/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="rizki fadhillah lubis, mp" data-unit="politeknik ati padang">
+    <div>
+      <h3>👤 RIZKI FADHILLAH LUBIS, MP</h3>
+      <p><strong>Program Studi:</strong> S3 PENGELOLAAN SDA DAN LINGKUNGAN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SUMATERA UTARA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATI PADANG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Aug 2023 — 1 Aug 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1pKjvKfLGepv_dxc27RYiTn6VyJz7MWtM/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="kadriadi, mt.," data-unit="politeknik industri logam morowali">
+    <div>
+      <h3>👤 KADRIADI, MT.,</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK MESIN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS ANDALAS</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI LOGAM MOROWALI</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 26 Aug 2024 — 25 Aug 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/11aCikBJb6sWQ-KzfxdSQcGLTIVNLqaoj/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="masruhin, s.pd., m.t." data-unit="smak makassar">
+    <div>
+      <h3>👤 MASRUHIN, S.Pd., M.T.</h3>
+      <p><strong>Program Studi:</strong> S3 PENDIDIKAN VOKASI KETEKNIKAN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS NEGERI MAKASSAR</p>
+      <p><strong>Unit Kerja:</strong> SMAK MAKASSAR</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 26 Aug 2024 — 26 Aug 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1_fiZnw4B-2h3RKok6yqFj1q-8mzH8tS5/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="a. dian sry rezki natsir, msm" data-unit="politeknik ati makassar">
+    <div>
+      <h3>👤 A. DIAN SRY REZKI NATSIR, MSM</h3>
+      <p><strong>Program Studi:</strong> S3 DOCTOR OF ECONOMICS,</p>
+      <p><strong>Perguruan Tinggi:</strong> GRADUATE SCHOOL OF HUMANITIES AND SOCIAL SCIENCES, SAITAMA UNIVERSITY</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATI MAKASSAR</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 9 Sep 2024 — 26 Sep 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/18qZGu9ioWaMs8n0cRSY2bSVvH_QmtQ5G/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="arip wijayanto, m.si.," data-unit="politeknik industri furnitur dan pengolahan kayu kendal">
+    <div>
+      <h3>👤 ARIP WIJAYANTO, M.Si.,</h3>
+      <p><strong>Program Studi:</strong> S3 WOOD AND FIBRE SCIENCE</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITE DE LORRAINE , PRANCIS</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI FURNITUR DAN PENGOLAHAN KAYU KENDAL</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Nov 2024 — 1 Nov 2027</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1HhJP87tmX9Q_PZ7bMHmsvVvB7WWOzeLh/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="erika fatma, s.pi, mt.," data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 ERIKA FATMA, S.Pi, MT.,</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS INDONESIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 3 Feb 2025 — 20 Jan 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1RP5xZ3FU11OUK_C1_hkr4xe03U91IOet/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="christian kuswibowo, m.sc." data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 CHRISTIAN KUSWIBOWO, M.Sc.</h3>
+      <p><strong>Program Studi:</strong> S3 MANAJEMEN DAN BISNIS</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT PERTANIAN BOGOR</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 22 Jan 2024 — 21 Jan 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/17nikf8KrqJh5DZuygMU08ALCQuFVR4ne/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="galih prakoso, m.t.," data-unit="politeknik industri furnitur dan pengolahan kayu kendal">
+    <div>
+      <h3>👤 GALIH PRAKOSO, M.T.,</h3>
+      <p><strong>Program Studi:</strong> S3 INDUSTRIAL ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> KING SAUD UNIVERSITY, ARAB SAUDI</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI FURNITUR DAN PENGOLAHAN KAYU KENDAL</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Feb 2024 — 1 Feb 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/17XP5VpI5zT8VlTNmczXxcIctgVoOBUbF/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="trisna yuniarti, s.t., m.t.," data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 TRISNA YUNIARTI, S.T., M.T.,</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK INDUSTRI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS INDONESIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 3 Feb 2025 — 3 Feb 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1IH-_PghGV9_CJsw1IeiFS0PeIA_5G5zH/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="ikhwanul muslim, sst, mt" data-unit="politeknik sttt bandung">
+    <div>
+      <h3>👤 IKHWANUL MUSLIM, SST, MT</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU DAN TEKNIK MATERIAL</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT TEKNOLOGI BANDUNG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 5 Feb 2024 — 4 Feb 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1GbfgKFX2m3cezTJpXiYz-6YuBJTPHJ09/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="singgih wibowo, m.eng" data-unit="politeknik aka bogor">
+    <div>
+      <h3>👤 SINGGIH WIBOWO, M.Eng</h3>
+      <p><strong>Program Studi:</strong> S3 CHEMICAL ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITY OF NEW SOUTH WALES</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK AKA BOGOR</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Feb 2024 — 6 Feb 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1lZT1PMbSc923AFpZYfhXXtDWPONl9d04/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="mustakim, st, m.eng.," data-unit="politeknik teknologi kimia industri medan">
+    <div>
+      <h3>👤 MUSTAKIM, ST, M.Eng.,</h3>
+      <p><strong>Program Studi:</strong> S3 MECHANICAL ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITI MALAYSIA PAHANG AL-SULTAN ABDULLAH, MALAYSIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK TEKNOLOGI KIMIA INDUSTRI MEDAN</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 20 Mar 2024 — 19 Mar 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1kH1hcsFpvQeAMBojxUUsPEjzDVGHhqRz/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="dedi febrianto, m.a.," data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 DEDI FEBRIANTO, M.A.,</h3>
+      <p><strong>Program Studi:</strong> DOCTOR OF PHILOSHOPY - SCHOOL OF EDUCATION</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITY OF QUEENSLAND</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Apr 2024 — 31 Mar 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/19LvCrhgtijflysMFZ_7k2KZv8sBmCek3/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="nurul hidayanah, a.md.ak.," data-unit="politeknik sttt bandung">
+    <div>
+      <h3>👤 NURUL HIDAYANAH, A.Md.Ak.,</h3>
+      <p><strong>Program Studi:</strong> S1 AKUNTANSI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS TERBUKA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STTT BANDUNG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 8 Apr 2024 — 7 Apr 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1c5caI4AHMXydkNs-2TpmVA7EmKMogDf2/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="mohammad jihad madiabu, m.si." data-unit="politeknik aka bogor">
+    <div>
+      <h3>👤 MOHAMMAD JIHAD MADIABU, M.Si.</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS INDONESIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK AKA BOGOR</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 25 Aug 2025 — 14 Jul 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1QAJtjBgEjQVqkWDMMKD8l-mnURe-TzOp/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="aynuddin, m.sc.," data-unit="politeknik aka bogor">
+    <div>
+      <h3>👤 AYNUDDIN, M.Sc.,</h3>
+      <p><strong>Program Studi:</strong> S3 ENVIRONMENTAL SCIENCE</p>
+      <p><strong>Perguruan Tinggi:</strong> COLLEGE OF THE ENVIROMENTAL AND ECOLOGY , XIAMEN UNIVERSITY</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK AKA BOGOR</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 28 Aug 2024 — 31 Jul 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1HvAlWR3qAA7G-lltCr8v7SUM8y1ENoRf/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="ragil yuliatmo, m.sc" data-unit="politeknik atk yogyakarta">
+    <div>
+      <h3>👤 RAGIL YULIATMO, M.Sc</h3>
+      <p><strong>Program Studi:</strong> S3 BIOTEKNOLOGI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATK YOGYAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Aug 2025 — 31 Jul 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1y2-3Qub82JjS9bybXMFS9mEwwmuE9BYM/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="asya tirta prameswari, a.md.ak." data-unit="bdi jakarta">
+    <div>
+      <h3>👤 ASYA TIRTA PRAMESWARI, A.Md.Ak.</h3>
+      <p><strong>Program Studi:</strong> S1 AKUNTANSI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS PELITA HARAPAN</p>
+      <p><strong>Unit Kerja:</strong> BDI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Aug 2025 — 1 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1yk1BrpHCytE2ANvzxXvgVAlxxs0b3H3q/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="izzati mubarokah, s.kom, m.t.i.," data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 IZZATI MUBAROKAH, S.Kom, M.T.I.,</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU KOMPUTER</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS INDONESIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 1 Jan 2025 — 1 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/11E5mBKZOgpR68XP1udb9PTv3O_JghM4-/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="anwar hidayat, s.sn, m.sn.," data-unit="politeknik atk yogyakarta">
+    <div>
+      <h3>👤 ANWAR HIDAYAT, S.Sn, M.Sn.,</h3>
+      <p><strong>Program Studi:</strong> S3 PENGKAJIAN SENI PERTUNJUKAN DAN SENI RUPA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATK YOGYAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Aug 2024 — 11 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1cK5Mfo9LktcNCSbsEMCtC6RQh-DdSUno/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="kartini afriani, s.si, m.si.," data-unit="politeknik aka bogor">
+    <div>
+      <h3>👤 KARTINI AFRIANI, S.Si, M.Si.,</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT PERTANIAN BOGOR</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK AKA BOGOR</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Aug 2024 — 11 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1I3ewjP7Rh4BKLliObv3kDu1DUCGrrs0x/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="mas rangga cili, s.kom, m.s.e." data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 MAS RANGGA CILI, S.Kom, M.S.E.</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU EKONOMI</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT PERTANIAN BOGOR</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Aug 2024 — 11 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1WWJt4mniTQpsHelhfwz-unNPSRT_MThg/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="boy chandra sitanggang, m.si" data-unit="akom bantaeng">
+    <div>
+      <h3>👤 BOY CHANDRA SITANGGANG, M.Si</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS HASANUDDIN</p>
+      <p><strong>Unit Kerja:</strong> AKOM BANTAENG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 18 Aug 2025 — 17 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/172MEUy8W55VMo-zJxystmsKCrYFX2JfK/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="pevi riani, s.si., m.si" data-unit="politeknik ati padang">
+    <div>
+      <h3>👤 PEVI RIANI, S.Si., M.Si</h3>
+      <p><strong>Program Studi:</strong> S3 KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS ANDALAS</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATI PADANG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 19 Aug 2024 — 18 Aug 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1Ri4Wz-D829sJZ7ZTxcnVZgJ5CQcpO716/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="taukhid wisnu broto, mt" data-unit="politeknik industri furnitur dan pengolahan kayu kendal">
+    <div>
+      <h3>👤 TAUKHID WISNU BROTO, MT</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU KOMPUTER</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS DIAN NUSWANTORO</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI FURNITUR DAN PENGOLAHAN KAYU KENDAL</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 17 Sep 2024 — 16 Sep 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1eT6IA55xmEjoVMf0NjmvdjBMduW94-8I/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="ahlan ismono, s.kom., mmsi.," data-unit="politeknik stmi jakarta">
+    <div>
+      <h3>👤 AHLAN ISMONO, S.Kom., MMSI.,</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNOLOGI INFORMASI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GUNADARMA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STMI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Oct 2024 — 30 Sep 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1qkdHeZ2FMyJncBM8DZ7pnzlNIIm7HdeH/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="andi asdiana irma sari yusuf, mt" data-unit="politeknik ati makassar">
+    <div>
+      <h3>👤 ANDI ASDIANA IRMA SARI YUSUF, MT</h3>
+      <p><strong>Program Studi:</strong> S3 APPLIED CHEMISTRY</p>
+      <p><strong>Perguruan Tinggi:</strong> KYUSHU UNIVERSITY</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATI MAKASSAR</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Oct 2025 — 30 Sep 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1ilDDzR-UwoNMSumhLXd3mAxC8VVQeGHi/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="sri novalia, st, mse" data-unit="sekretariat bpsdmi">
+    <div>
+      <h3>👤 SRI NOVALIA, ST, MSE</h3>
+      <p><strong>Program Studi:</strong> S3 MANAJEMEN DAN BISNIS</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT PERTANIAN BOGOR</p>
+      <p><strong>Unit Kerja:</strong> SEKRETARIAT BPSDMI</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 12 Oct 2024 — 11 Oct 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1ZnRyEyAALm1jPqQLEzf3TUqjDnt1k2iH/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="monita pasaribu, mt" data-unit="politeknik industri petrokimia banten">
+    <div>
+      <h3>👤 MONITA PASARIBU, MT</h3>
+      <p><strong>Program Studi:</strong> S3 TEKNIK KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> INSTITUT TEKNOLOGI BANDUNG</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK INDUSTRI PETROKIMIA BANTEN</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 9 Sep 2024 — 31 Oct 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/16hoMOk0J7WL7NRoGAwPJkjM2uE_iepqC/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="al kautsar permana, m.t." data-unit="politeknik stmi jakarta">
+    <div>
+      <h3>👤 AL KAUTSAR PERMANA, M.T.</h3>
+      <p><strong>Program Studi:</strong> S3 ELECTRICAL AND ELECTRONIC ENGINEERING</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITI MALAYSIA PAHANG AL-SULTAN ABDULLAH, MALAYSIA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK STMI JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 5 Nov 2024 — 4 Nov 2028</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1mNMA8y-vl2ZiMKvmFuCsbJPbbL7z1lL_/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="adhy prastyo eko putranto, stp, mt." data-unit="akom surakarta">
+    <div>
+      <h3>👤 ADHY PRASTYO EKO PUTRANTO, STP, MT.</h3>
+      <p><strong>Program Studi:</strong> S3 PENDIDIKAN TEKNOLOGI DAN KEJURUAN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS NEGERI YOGYAKARTA</p>
+      <p><strong>Unit Kerja:</strong> AKOM SURAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 14 Feb 2025 — 14 Feb 2029</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1VmW8aV2aEHv0JjmJeSRYAmduAvK87ulU/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="theresia anindita, s.e., m.s.e." data-unit="politeknik app jakarta">
+    <div>
+      <h3>👤 THERESIA ANINDITA, S.E., M.S.E.</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU EKONOMI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SEBELAS MARET</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK APP JAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 1 Aug 2025 — 1 Aug 2029</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1y27V4tiBNZVFPiWrh32Yp7UyTCIhv9_p/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="muhammad taufiq t, m.sc" data-unit="akom bantaeng">
+    <div>
+      <h3>👤 MUHAMMAD TAUFIQ T, M.Sc</h3>
+      <p><strong>Program Studi:</strong> S3 ILMU KIMIA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS HASANUDDIN</p>
+      <p><strong>Unit Kerja:</strong> AKOM BANTAENG</p>
+      <p><strong>Kategori Tubel:</strong> MANDIRI</p>
+      <p class="meta"><strong>Periode:</strong> 18 Aug 2025 — 17 Aug 2029</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1wmXlPUf88DvFcPbdvsXVva6TgEUNKEMf/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="syahrul huda prakarsa, a.md." data-unit="akom bantaeng">
+    <div>
+      <h3>👤 SYAHRUL HUDA PRAKARSA, A.Md.</h3>
+      <p><strong>Program Studi:</strong> S1 MANAJEMEN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS NEGERI JAKARTA</p>
+      <p><strong>Unit Kerja:</strong> AKOM BANTAENG</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Sep 2025 — 31 Aug 2029</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1SqGYRxPzzXYrbBGrcrYu-_slJnW3aRgw/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="rofiatun nafiah, s.s., m.a.," data-unit="politeknik atk yogyakarta">
+    <div>
+      <h3>👤 ROFIATUN NAFIAH, S.S., M.A.,</h3>
+      <p><strong>Program Studi:</strong> S3 DOKTOR PENGKAJIAN AMERIKA</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATK YOGYAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Jan 2023 — 17 Aug 2025</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1fzuovsgQxMoFpfm39xJLlOVQ6ZRSTJ39/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="windy hendra setyawan, s.kom" data-unit="politeknik atk yogyakarta">
+    <div>
+      <h3>👤 WINDY HENDRA SETYAWAN, S.Kom</h3>
+      <p><strong>Program Studi:</strong> S2 MAGISTER TEKNOLOGI INFORMASI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS GADJAH MADA</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK ATK YOGYAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 14 Aug 2023 — 13 Aug 2025</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1VahmvVZ4hhMInMhX_3bFkYzoaZegg98h/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="rizky aditya husandani,ss" data-unit="akom surakarta">
+    <div>
+      <h3>👤 RIZKY ADITYA HUSANDANI,SS</h3>
+      <p><strong>Program Studi:</strong> S2 ILMU KOMUNIKASI</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS SEBELAS MARET</p>
+      <p><strong>Unit Kerja:</strong> AKOM SURAKARTA</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 28 Aug 2023 — 27 Aug 2025</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1YaAwE1v1nNmEMMtHe-n20d0kj_lfO-rv/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+  <div class="card" data-name="yenny sitanggang, s.t., m.t." data-unit="politeknik teknologi kimia industri medan">
+    <div>
+      <h3>👤 YENNY SITANGGANG, S.T., M.T.</h3>
+      <p><strong>Program Studi:</strong> S3 MANAJEMEN</p>
+      <p><strong>Perguruan Tinggi:</strong> UNIVERSITAS NEGERI MEDAN</p>
+      <p><strong>Unit Kerja:</strong> POLITEKNIK TEKNOLOGI KIMIA INDUSTRI MEDAN</p>
+      <p><strong>Kategori Tubel:</strong> BEASISWA</p>
+      <p class="meta"><strong>Periode:</strong> 1 Aug 2021 — 31 Jul 2025</p>
+    </div>
+    <div>
+      <a class="btn" href="https://drive.google.com/file/d/1pNqmjOyDr-blydt9STniad3Ru7M5z0i0/view?usp=drive_link" target="_blank" rel="noopener">📄 Lihat SK</a>
+    </div>
+  </div>
+
+</div>
+<script>
+// Summary count
+document.getElementById('summary').textContent = document.querySelectorAll('.card').length + ' pegawai • gunakan kotak pencarian untuk filter';
+// Simple search filter
+const search = document.getElementById('search');
+search.addEventListener('input', function(e){
+  const q = e.target.value.trim().toLowerCase();
+  document.querySelectorAll('.card').forEach(card => {
+    const name = card.dataset.name || '';
+    const unit = card.dataset.unit || '';
+    if(q === '' || name.includes(q) || unit.includes(q)){
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+</script>
+</body>
+</html>
